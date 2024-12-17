@@ -1,7 +1,10 @@
 <template>
+  <Header :mensaje="texto"></Header>
   <div class="container">
     <Sidebar></Sidebar>
     <div class="content">
+      <input type="texto" v-model="texto">
+      {{ texto }}
     <RouterView></RouterView>
   </div>
   </div>
@@ -9,7 +12,10 @@
 </template>
 
 <script setup>
-import Sidebar from '../components/ListaTSidebar.vue';
+  import Sidebar from '../components/ListaTSidebar.vue';
+  import Header from '../components/Header-er.vue';
+  import { ref } from 'vue';
+  const texto = ref('');
 </script>
 
 <style>
