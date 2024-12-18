@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-  import Sidebar from '../components/ListaTSidebar.vue';
+  import Sidebar from '../components/Sidebar-s.vue';
   import Header from '../components/Header-er.vue';
   import { ref } from 'vue';
   const texto = ref('');
